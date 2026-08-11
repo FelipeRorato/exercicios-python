@@ -1,0 +1,38 @@
+#ex1
+def mostrar_info(nome: str, idade: int, cidade: str) -> None:
+    print(f'nome: {nome}, idade: {idade}, cidade: {cidade}')
+
+mostrar_info('Ana', 18, 'Osasco')
+
+
+
+
+#ex2
+def calcular_area_retangulo(base=10, altura=10) -> float:
+    return base * altura
+
+x = calcular_area_retangulo()
+y = calcular_area_retangulo(5, 10)
+print(x)
+print(y)
+#nesse caso, so se coloca a base e a altura =10 pra que nao precise necessariamente de um argumento pra poder
+#chamar a função
+
+
+
+
+#ex3
+def soma(a:float, b:float) -> float:
+    return a + b
+x = soma(5.5, 10.5)
+print(x)
+
+
+#ex4
+def enviar_email(destinatario:str, assunto = 'sem assunto', corpo = ''):
+    '''criar um email'''
+    print(f"Destinatário: {destinatario}")
+    print(f"Assunto: {assunto}")
+    print(f"Corpo: {corpo}")
+
+enviar_email('')
