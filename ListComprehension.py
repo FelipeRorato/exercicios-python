@@ -42,3 +42,5 @@ produtos = [
 ["Mochila", 89.90, 3],
 ["Estojo", 15.00, 8],
 ]
+produtosestoquebaixo = [prod[0] for prod in produtos if prod[ESTOQUE]<10]
+print(produtosestoquebaixo)
